@@ -56,6 +56,39 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+      <!-- Numeric Textfield -->
+      <form action="#">
+        <div
+          class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+        >
+          <input
+            class="mdl-textfield__input"
+            type="text"
+            pattern="-?[0-9]*(\.[0-9]+)?"
+            id="numerator"
+          />
+          <label class="mdl-textfield__label" for="numerator"
+            >Numerator</label
+          >
+          <span class="mdl-textfield__error">Input is not a number!</span>
+        </div>
+        <p></p>
+        <div
+        class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label"
+      >
+      <form action="#">
+        <input
+          class="mdl-textfield__input"
+          type="text"
+          pattern="-?[0-9]*(\.[0-9]+)?"
+          id="denomenator"
+        />
+        <label class="mdl-textfield__label" for="denomenator"
+          >Denomenator</label
+        >
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      </form>
         <p></p>
         <img
           src="./images/notebook-animation.svg"

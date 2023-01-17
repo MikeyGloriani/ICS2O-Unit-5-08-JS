@@ -16,6 +16,17 @@ if (navigator.serviceWorker) {
 /**
  * This function displays an alert.
  */
+
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  var numberB = parseFloat(document.getElementById("denomenator").value)
+  var numberA = parseFloat(document.getElementById("numerator").value)
+  var counter = 0
+  var remainder = numberA
+
+  while (remainder >= numberB) {
+    remainder = remainder - numberB
+    counter++
+  }
+  document.getElementById("quotient").innerHTML =
+    "You have a quotient of  " + counter + " R " + remainder + "."
 }
