@@ -27,6 +27,6 @@ function myButtonClicked() {
     remainder = remainder - numberB
     counter++
   }
-  document.getElementById("quotient").innerHTML =
-    "You have a quotient of  " + counter + " R " + remainder + "."
+  document.getElementById("hello-world").innerHTML =
+    "Your answer is  " + counter + " and a remainder of " + remainder + "."
 }
